@@ -1,2 +1,5 @@
 #!/usr/bin/env zsh
-echo "crontab -l && 0 * * * * venv/bin/python read_ruuvi.py"
+crontab -l > temp_cron
+echo "*/5 * * * * $(pwd)/venv/bin/python $(pwd)/read_ruuvi.py >/tmp/cron.log 2>/tmp/cron_stderr.log" >> temp_cron
+crontab temp_cron
+rm temp_cron
