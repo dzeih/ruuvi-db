@@ -3,7 +3,6 @@ from datetime import datetime as dt
 from typing import Union
 
 from bleak import discover
-import psycopg2
 
 from config import get_setting
 from db import insert_record

@@ -3,4 +3,14 @@ Small parser job to:
  - parse measurements
  - dumping parsed measurements into local db
 
-Comes with zero error handling, lots of better examples around GitHub & blogs, but none of them worked on M1 ARM without Rosetta 2 (user errors quite likely!).
+Comes with definitions for Grafana dashboards containing separate views for
+- latest measurements
+- measurement timeseries
+
+Comes with zero error handling, lots of better examples around GitHub & blogs. Try them first
+
+TODO:
+- Add containers now that M1 has them
+- clean PostgreSQL backup script to cloud
+- PostgreSQL installation & role creation automation
+- Grafana installation automation
